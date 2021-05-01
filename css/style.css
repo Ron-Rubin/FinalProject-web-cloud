@@ -1,0 +1,427 @@
+/* Desktop area */
+@media (min-width:651px) {}
+
+/* mobile area */
+@media (max-width: 480px) {}
+
+/* tablet area */
+@media (min-width:481px) {}
+
+/*----------------------------------------------------------------------*/
+/*  CSS for Object page design + Genral all pages header + nav + aside  */
+/*----------------------------------------------------------------------*/
+
+/*   General design    */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+header,
+main,
+footer,
+nav,
+aside,
+section {
+    display: block;
+}
+/*   Header design    */
+header {
+    position: absolute;
+    width: 100%;
+}
+#logo {
+    position: absolute;
+    display: block;
+    background-image: url("/images/logo.jpeg");
+    height: 297px;
+    width: 190px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -120px;
+    margin-left: 66px;
+    z-index:99;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: -100px;
+
+}
+.container a {
+    justify-content: end;
+}
+#loginSides a {
+    margin-left: 22px;
+    width: 50px;
+}
+/*   Nav design    */
+nav {
+    height: 80px;
+    margin-top: 154px;
+}
+.container-fluid {
+    margin-left: 250px;
+
+}
+.nav-item {
+    padding-bottom: 18px;
+}
+.nav-link {
+    margin-left: 26px;
+    width: 175px;
+    height: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    padding-bottom: 8px;
+}
+.CFB {
+    width: 404PX;
+}
+.element.style {
+    margin-left: 1110px;
+    width: 274px;
+}
+/*   Headline design    */
+#headlineZone {
+    width: 100%;
+    margin: 0 auto;
+}
+#headline {
+    text-align: center;
+    background-color: #ECECEC;
+    height: 60px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    color: #645F5F;
+    padding-top: 7px;
+}
+/*   Small Links design    */
+#asideLinks {
+    margin-left: 126px;
+    color: #616CCD;
+}
+#asideLinks a {
+    color: #616CCD;
+}
+#asideLinks a:hover {
+    color: #323977;
+}
+.asideLinksSelected {
+    color: #323977;
+}
+/*   Main design    */
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 58px;
+}
+.mainImg-Container {
+    position: absolute;
+}
+.mainImgLeft-item {
+    position: absolute;
+
+}
+.utiFunc-Container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: flex-end;
+}
+.utiFunc-Container section {
+    display: block;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin-left: 40px;
+}
+.utiFunc-Container section a{
+    color: #000000;
+}
+.utiFunc-Container section a:hover{
+    color: #1f1f27;
+}
+/* 
+.utiFuncPrint-item a{
+    color: #000000;
+
+}
+.utiFuncSave-item a{
+    color: #000000;
+
+}
+.utiFuncShare-item a{
+    color: #000000;
+
+} */
+
+.mainImgRight-item {
+    position: absolute;
+    margin-left: 550px;
+    width: 500px;
+}
+.explImgs-Container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.explImgs-Container section {
+    display: block;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding-top: 90px;
+    margin-left: 50px;
+}
+.explImg1-item {
+    background-image: url("/images/cutlery.png");
+    width: 100px;
+
+}
+.explImg2-item {
+    background-image: url("/images/dish.png");
+    width: 90px;
+}
+.explImg3-item {
+    background-image: url("/images/clock.png");
+    width: 85px;
+}
+.foodExplain {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 41px;
+    color: #000000;
+}
+.calImgs-Container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: center;
+}
+.calImgs-Container section {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    height: 66px;
+    width: 66px;
+    padding-top: 70px;
+    margin-left: 50px;
+
+}
+.calImg1-item {
+    background-image: url("/images/kcal.png");
+}
+.calImg2-item {
+    background-image: url("/images/ckg.png");
+}
+.calImg3-item {
+    background-image: url("/images/protein.png");
+}
+.explnations-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 500px;
+}
+.explnations-container section {
+    display: block;
+    text-align: center;
+}
+.list-group-item {
+    background-color: #ECECEC;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: justify;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    
+    color: #000000;
+}
+#ingredients-item {
+    background-color: #ECECEC;
+    width: 30%;
+
+}
+#ingredients-item ul{
+    padding-top: 50px;
+}
+.ingList {
+    text-align: start;
+}
+#how2Prepare-item {
+    background-color: #ECECEC;
+    width: 60%;
+    height: 758px;
+    margin-left: 76px;
+}
+#how2Prepare-item ol{
+    padding-top: 50px;
+}
+.utilitiesLinks-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: flex-end;
+}
+.utilitiesLinks-Container section {
+    display: block;
+    text-align: center;
+
+}
+.utilitiesLinks-Container section a{
+    color: #000000;
+}
+.utilitiesLinkShopping-item a{
+    height: 50px;
+    padding-top: 30px;
+}
+.utilitiesLinkList-item {
+    display: block;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding-top: 50px;
+    margin-right: 20px;
+    background-image: url("/images/list.png");
+    width: 50px;
+}
+.utilitiesLinkList-item a {
+    color: #645F5F;
+
+}
+.utilitiesLinkList-item a:hover {
+    color: #4b489e;
+}
+.iMadeItButton {
+    background-color: #F8DF89;
+    margin-right: 20px;
+}
+.iMadeItButton:hover {
+    background-color: #ffd52b;
+}
+.lastElement {
+    display: block;
+}
+/*   Footer design    */
+#footerZone {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ECECEC;
+    align-items: center;
+    height: 60px;
+    margin-top: 30px;
+}
+#footerElement {
+    display: block;
+    text-align: center;
+    background-color: #ECECEC;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    color: #645F5F;
+}
+
+/*----------------------------------------------------------------------*/
+/*                     CSS for Form page design                         */
+/*----------------------------------------------------------------------*/
+
+.formMain {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #f0f0f0;
+    padding: 30px 0;
+    margin-top: -10px;
+}
+.form-range {
+    width: 82%;
+}
+.textareaRange {
+    margin: 0 auto;
+    width: 50%;
+}
+.titleName {
+    margin: 0 auto;
+    width: 90%;
+}
+.formAlignItem {
+    width: 80%;
+    margin: 0 auto;
+    text-align: start;
+}
+.ingrCount {
+    text-align: end;
+}
+.formAlignItem2 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: end;
+}
+.submitButton {
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/*----------------------------------------------------------------------*/
+/*                     CSS for Form result page design                         */
+/*----------------------------------------------------------------------*/
+
+.formResultMain {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #f0f0f0;
+    padding: 30px 0;
+    margin-top: -10px;
+    height: 200px;   
+}
+.formResultMain h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 53px;
+    color: #646464;
+}
+.formResultMain h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 53px;
+    color: #646464;
+
+}
+
+
