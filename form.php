@@ -1,4 +1,3 @@
-
 <?php
 include 'db.php';
 include 'config.php';
@@ -17,7 +16,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Spectral:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Spectral:wght@300&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -38,13 +38,13 @@ session_start();
             <section>
                 <a id="logo" href="index.html"></a>
             </section>
-        <section id="loginSides">
-            <section class="container">
-            <a href="#" class="heart "><img src="images/heart.png"></a>
-            <a href="#" class="login "><img src="images/login.png"></a>
-            <a href="#" class="Dots3 "><img src="images/3 dots.png"></a>
+            <section id="loginSides">
+                <section class="container">
+                    <a href="#" class="heart "><img src="images/heart.png"></a>
+                    <a href="#" class="login "><img src="images/login.png"></a>
+                    <a href="#" class="Dots3 "><img src="images/3 dots.png"></a>
+                </section>
             </section>
-        </section>
         </section>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -171,7 +171,7 @@ session_start();
                 <label class="col-sm-3 col-form-label ingrCount">Ingredient 2</label>
                 <section class="col-sm-5">
                     <input type="text" title="please choose a name" placeholder="Ingredient Name" name="Ingredient_2"
-                     class="form-control" id="inputEmail3">
+                        class="form-control" id="inputEmail3">
                 </section>
                 <section class="col-sm-2">
                     <select type="text" name="recipeIngrMeasur" class="form-control"
@@ -196,7 +196,7 @@ session_start();
                 <label class="col-sm-3 col-form-label ingrCount">Ingredient 3</label>
                 <section class="col-sm-5">
                     <input type="text" title="please choose a name" placeholder="Ingredient Name" name="recipeName"
-                     class="form-control" id="inputEmail3">
+                        class="form-control" id="inputEmail3">
                 </section>
                 <section class="col-sm-2">
                     <select type="text" name="recipeIngrMeasur" class="form-control"
@@ -252,7 +252,8 @@ session_start();
                 <legend class="col-form-label col-sm-4 pt-0">Did you prepare this recipe</legend>
                 <div class="col-sm-8">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Yes" required>
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Yes"
+                            required>
                         <label class="form-check-label" for="gridRadios1">
                             Yes
                         </label>
@@ -274,6 +275,7 @@ session_start();
         <a id="footerElement" href="#">Back to top</a>
     </footer>
 </body>
+
 </html>
 <?php
  //close DB connection

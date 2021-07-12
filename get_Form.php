@@ -88,11 +88,11 @@ $Step_2 = mysqli_real_escape_string($connection, $_POST['Step_2']);
     <main id="wrapper">
         <section class="formResultMain">
             <h1>Thank you!</h1>
-                <?php
+            <?php
                     $sName = $_GET["recipeName"];
                     $sColor = $_GET["shirtColor"];
                 echo  "<h2>You succecfuly added " . $sName .  "to your recipes</h2>";
-                ?> 
+                ?>
 
 
         </section>
