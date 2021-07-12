@@ -1,15 +1,11 @@
-/* Desktop area */
-@media (min-width:651px) {}
-
-/* mobile area */
-@media (max-width: 480px) {}
-
-/* tablet area */
-@media (min-width:481px) {}
 
 /*----------------------------------------------------------------------*/
 /*  CSS for Object page design + Genral all pages header + nav + aside  */
 /*----------------------------------------------------------------------*/
+.checked {
+    color: orange;
+    
+  }
 
 /*   General design    */
 * {
@@ -28,28 +24,33 @@ aside,
 section {
     display: block;
 }
+h2 {
+    font-family: 'Spectral', serif;
+}
 /*   Header design    */
 header {
     position: absolute;
     width: 100%;
 }
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 #logo {
     position: absolute;
     display: block;
-    background-image: url("/images/logo.jpeg");
+    background-image: url("../images/logo.jpeg");
     height: 297px;
     width: 190px;
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: -120px;
     margin-left: 66px;
-    z-index:99;
+    z-index: 1;
 }
 .container {
-    display: flex;
-    flex-direction: row;
     width: 100%;
-    justify-content: flex-end;
     margin-top: -100px;
 
 }
@@ -84,7 +85,7 @@ nav {
     padding-bottom: 8px;
 }
 .CFB {
-    width: 404PX;
+    width: 100%;
 }
 .element.style {
     margin-left: 1110px;
@@ -128,11 +129,12 @@ nav {
     margin-top: 58px;
 }
 .mainImg-Container {
-    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 .mainImgLeft-item {
-    position: absolute;
-
+    display: block;
 }
 .utiFunc-Container {
     display: flex;
@@ -154,24 +156,11 @@ nav {
 .utiFunc-Container section a:hover{
     color: #1f1f27;
 }
-/* 
-.utiFuncPrint-item a{
-    color: #000000;
-
-}
-.utiFuncSave-item a{
-    color: #000000;
-
-}
-.utiFuncShare-item a{
-    color: #000000;
-
-} */
-
 .mainImgRight-item {
-    position: absolute;
-    margin-left: 550px;
-    width: 500px;
+    width: 60%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-left: 30px;
 }
 .explImgs-Container {
     display: flex;
@@ -186,28 +175,28 @@ nav {
     background-size: contain;
     text-align: center;
     padding-top: 90px;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 .explImg1-item {
-    background-image: url("/images/cutlery.png");
+    background-image: url("../images/cutlery.png");
     width: 100px;
 
 }
 .explImg2-item {
-    background-image: url("/images/dish.png");
+    background-image: url("../images/dish.png");
     width: 90px;
 }
 .explImg3-item {
-    background-image: url("/images/clock.png");
+    background-image: url("../images/clock.png");
     width: 85px;
 }
 .foodExplain {
-    display: block;
-    width: 100%;
+    /* display: block; */
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
-    font-family: Roboto;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
@@ -229,25 +218,25 @@ nav {
     height: 66px;
     width: 66px;
     padding-top: 70px;
-    margin-left: 50px;
+    margin-left: 100px;
 
 }
 .calImg1-item {
-    background-image: url("/images/kcal.png");
+    background-image: url("../images/kcal.png");
 }
 .calImg2-item {
-    background-image: url("/images/ckg.png");
+    background-image: url("../images/ckg.png");
 }
 .calImg3-item {
-    background-image: url("/images/protein.png");
+    background-image: url("../images/protein.png");
 }
 .explnations-container {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 500px;
+    padding-top: 100px;
 }
 .explnations-container section {
     display: block;
@@ -255,19 +244,21 @@ nav {
 }
 .list-group-item {
     background-color: #ECECEC;
-    font-family: Roboto;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 34px;
     text-align: justify;
     font-feature-settings: 'tnum' on, 'lnum' on;
-    
     color: #000000;
+    font-style: oblique;
+    
 }
 #ingredients-item {
     background-color: #ECECEC;
     width: 30%;
+    height: 758px;
 
 }
 #ingredients-item ul{
@@ -295,7 +286,6 @@ nav {
 .utilitiesLinks-Container section {
     display: block;
     text-align: center;
-
 }
 .utilitiesLinks-Container section a{
     color: #000000;
@@ -312,7 +302,7 @@ nav {
     text-align: center;
     padding-top: 50px;
     margin-right: 20px;
-    background-image: url("/images/list.png");
+    background-image: url("../images/list.png");
     width: 50px;
 }
 .utilitiesLinkList-item a {
@@ -395,7 +385,154 @@ nav {
 }
 
 /*----------------------------------------------------------------------*/
-/*                     CSS for Form result page design                         */
+/*                      CSS for List page design                        */
+/*----------------------------------------------------------------------*/
+
+.sort {
+    position: absolute;
+    right: 0px;
+}
+.sort a {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boxes, .boxes1 {
+    text-decoration: none;
+    color: #000000;
+    margin-top: 20px;
+}
+.boxes:hover, .boxes1:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.rating {
+    margin-left: -150px;
+}
+
+.boxes_cont {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boxes {
+    width:300px;
+}
+.boxes1 {
+    margin-left: 200px;
+    width: 300px;
+}
+.boxes a {     
+    color: #645F5F;
+
+    text-decoration: none;
+    margin-left: 140px;
+    text-align: center;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.boxes1 h6 {   
+    color: #645F5F;
+
+    text-align: center;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.boxes h6 {   
+    color: #645F5F;
+
+    text-align: center;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.boxes1 p {
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boxes p {
+    text-align: left;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boxes1 :last-child {
+    padding-left: 200px;
+}
+.boxes :last-child {
+    padding-left: 200px;
+}
+.ratingicon {
+    background-repeat: no-repeat;
+   background-image: url(../images/rating.png);
+   width: 45px;
+   height: 45px;
+    display: block;
+    padding-left: 43px;
+}
+.ratingsec {
+    display: flex;
+    justify-content: flex-start;
+}
+#ratingicon1 {
+    background-color: transparent;
+    border-style: hidden;
+    background-repeat: no-repeat;
+   background-image: url(../images/rating.png);
+   width: 45px;
+   height: 45px;
+    display: block;
+    padding-left: 43px;
+}
+#ratingicon2 {
+    background-color: transparent;
+    border-style: hidden;
+    background-repeat: no-repeat;
+   background-image: url(../images/rating.png);
+   width: 45px;
+   height: 45px;
+    display: block;
+    padding-left: 43px;
+}
+#ratingicon3 {
+    background-color: transparent;
+    border-style: hidden;
+    background-repeat: no-repeat;
+   background-image: url(../images/rating.png);
+   width: 45px;
+   height: 45px;
+    display: block;
+    padding-left: 43px;
+}
+#ratingicon4 {
+    background-color: transparent;
+    border-style: hidden;
+    background-repeat: no-repeat;
+   background-image: url(../images/rating.png);
+   width: 45px;
+   height: 45px;
+    display: block;
+    padding-left: 43px;
+}
+#ratingicon5 {
+    background-color: transparent;
+    border-style: hidden;
+    background-repeat: no-repeat;
+   background-image: url(../images/rating.png);
+   width: 45px;
+   height: 45px;
+    display: block;
+    padding-left: 43px;
+}
+.ratingsec {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*----------------------------------------------------------------------*/
+/*                   CSS for Form result page design                    */
 /*----------------------------------------------------------------------*/
 
 .formResultMain {
@@ -424,4 +561,132 @@ nav {
 
 }
 
+/*----------------------------------------------------------------------*/
+/*                     CSS for Login page design                         */
+/*----------------------------------------------------------------------*/
 
+#mainWrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 158px;
+    margin-left: 500px;
+}
+.login-btn {
+    margin-top: 20px;
+    margin-left: 200px;;
+}
+/*----------------------------------------------------------------------*/
+/*                           Media Queries                              */
+/*----------------------------------------------------------------------*/
+
+@media(max-width: 1420px) {
+    .heart, .Dots3, nav, .reviwsImg,  aside section, .login, .utiFunc-Container, .explImgs-Container, .calImgs-Container {
+        display: none;
+    }
+    .header-container {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .collapse  .navbar-nav, .nav-item .nav-link { 
+        justify-content: start;
+    }
+    aside p{
+        margin-top: 80px;
+    }
+    #wrapper, main, .mainWrapper {
+        margin-top: 400px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .mainImgLeft-item, .mainImgRight-item, .foodExplain, .mainPage-container{
+        width: 100%;
+    }
+    .mainImg-Container{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    .mainImgLeft-item img {
+        width: 350px;
+        margin: 0 auto;
+        margin-top: -20px;
+    }
+    header {
+        display: block;
+    }
+    .mainImg-Container, .explnations-container, .mainPage-container {
+        flex-direction: column;
+    }
+    .explnations-container {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 0px;
+        padding: 0px;
+        justify-content: start;
+    }
+    #ingredients-item , #how2Prepare-item{
+        width: 500px;
+        height: 100%;
+        padding: 0 auto;
+        margin: 0;
+        margin-top: 15px;
+        padding-top: 5px;
+    }
+    #ingredients-item ul, #how2Prepare-item ol{
+        padding: 0;
+    }
+    .ingList {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .prepMobile {
+        width: 400px;
+    }
+    .mainImgLeft-item, .mainImgLeft-item img {
+        width: 300px; 
+    }
+    .mainImgRight-item {
+        margin-left: 0px;
+    }
+    #Reviews {
+        margin-top: 60px;
+    }
+    #Reviews h2, .lastElement{
+        text-align: center;
+    }
+    .infoMobile {
+        background-image: url("../images/info.png");
+        position: absolute;
+        display: block;
+        height: 48px;
+        width: 48px;
+        margin-top: -190px;
+        margin-left: 250px;
+
+    }
+
+    .boxes {
+        margin-left: -50px;
+        display: block;
+        width: 100%;
+    }
+    .boxes1 {
+        margin-left: -100px;
+        display: block;
+        width: 100%;
+    }
+    .boxes p , .boxes1 p {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 50px;
+        width: 300px;
+    }
+    .boxes a , .boxes1 h6, .boxes h6 {
+        display: block;
+        margin-left: -450px;
+    }
+
+}

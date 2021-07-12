@@ -1,3 +1,26 @@
+<?php
+include 'db.php';
+// include "config.php";
+session_start();
+//get data from DB
+?>
+<?php
+$recipeName = mysqli_real_escape_string($connection, $_POST['recipeTitle']);
+$People = mysqli_real_escape_string($connection, $_POST['recipePax']);
+$Time = mysqli_real_escape_string($connection, $_POST['recipeHours']);
+$Cal = mysqli_real_escape_string($connection, $_POST['Cal']);
+$Ingredient_1 = mysqli_real_escape_string($connection, $_POST['Ingredient_1']);
+$Ingredient_2 = mysqli_real_escape_string($connection, $_POST['Ingredient_2']);
+$Step_1 = mysqli_real_escape_string($connection, $_POST['Step_1']);
+$Step_2 = mysqli_real_escape_string($connection, $_POST['Step_2']);
+      $query = "insert into  tbl_Ingredients(Ingredient_1,Ingredient_2,Step_1,Step_2,
+      Preparation_Time,Recipes_title,People,cal) VALUES
+       ('$Ingredient_1', '$Ingredient_2','$Step_1','$Step_2', '$Time','$recipeName','$People', '$Cal')";
+      $result = mysqli_query($connection, $query);
+      echo $query;
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +38,6 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- js -->
-
     <title>Object Page</title>
 </head>
 
@@ -69,7 +91,6 @@
                 <?php
                     $sName = $_GET["recipeName"];
                     $sColor = $_GET["shirtColor"];
-
                 echo  "<h2>You succecfuly added " . $sName .  "to your recipes</h2>";
                 ?> 
 
@@ -87,3 +108,8 @@
 </body>
 
 </html>
+
+<?php
+ //close DB connection
+ mysqli_close($connection);
+?>
